@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 44" fill="none">
+  <g transform="translate(4, 6)">
+    <!-- Leaf outline with organic curve -->
+    <path d="M16 2C24 6 30 16 30 26C20 28 10 24 4 18C2 12 6 4 16 2Z" fill="#E8F3EC" stroke="#2F6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Central pulse / heartbeat line through leaf -->
+    <path d="M4 18C10 18 13 18 15 13L17.5 24L20.5 10L23 20L25 18H32" stroke="#2F6B4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="46" y="27" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif" font-size="21" font-weight="600" letter-spacing="-0.03em" fill="#1D1D1F">Agri<tspan fill="#2F6B4F">Pulse</tspan></text>
+</svg>

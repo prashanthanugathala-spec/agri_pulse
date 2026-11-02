@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-low":"#f6f3f5","outline":"#707972","primary-fixed-dim":"#96d4b2","secondary-fixed":"#bceed1","surface-container-highest":"#e4e2e4","on-primary":"#ffffff","inverse-on-surface":"#f3f0f2","on-secondary-fixed":"#002113","on-tertiary-fixed":"#141e1a","surface-bright":"#fcf8fb","secondary-fixed-dim":"#a1d1b6","surface-container-high":"#eae7ea","on-secondary-fixed-variant":"#214f3a","tertiary-fixed-dim":"#bec9c3","surface-tint":"#2d694d","primary-fixed":"#b1f0cd","tertiary-container":"#58625d","on-primary-fixed-variant":"#105137","on-background":"#1b1b1d","error-container":"#ffdad6","on-surface":"#1b1b1d","secondary":"#3a6751","surface-dim":"#dcd9dc","background":"#fcf8fb","primary-container":"#2f6b4f","on-surface-variant":"#404943","inverse-primary":"#96d4b2","tertiary-fixed":"#dae5de","surface-container":"#f0edef","on-primary-container":"#aae9c6","surface":"#fcf8fb","inverse-surface":"#303032","on-tertiary-container":"#d2ddd7","outline-variant":"#c0c9c1","on-secondary":"#ffffff","on-tertiary":"#ffffff","surface-variant":"#e4e2e4","on-primary-fixed":"#002113","on-tertiary-fixed-variant":"#3f4944","surface-container-lowest":"#ffffff","primary":"#125238","on-error":"#ffffff","error":"#ba1a1a","secondary-container":"#bceed1","on-error-container":"#93000a","on-secondary-container":"#406d56","tertiary":"#404a45"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.75rem","gutter-lg":"2rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.5rem","margin-desktop":"3rem","space-xs":"0.5rem","gutter-sm":"1rem","space-xl":"2.5rem","margin-mobile":"1rem","margin":"2rem"},"fontFamily":{"display-mobile":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"headline-sm":["Inter"],"metric-num":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"label-caps":["Inter"]},"fontSize":{"display-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.025em","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"500"}],"body-lg":["17px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"500"}],"display":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"500"}],"headline-sm":["19px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"500"}],"metric-num":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[260px]"><img alt="AgriPulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfaiLvvgf9a5-NGlhXD5D4pLSjmFUp5bMPqWgtuCkzX2jcR7FJictSy86AWciGYECsN-nXBpRdwCAkFoWXpLV9R5ZsWh1yqPf-iTsp4BpIfOxHbxSiVozBjztB_EOT0UgMMKSTrZhiW3cx1WOhcH16-vz8CTLwCv7Zg-j6BBL9_C8WHg-iL49-FFqIt1LOWDg1DrEjbnANaOem-06kLxiZrfevUeCyOr5XaxfIAiulUlALJ_NoZI79mUGc"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">AgriPulse</span></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-12 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search fields, crops, alerts, diagnostics..." type="text"/><kbd class="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-label-caps text-label-caps text-on-surface-variant bg-surface-container-highest rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">wb_sunny</span><span>Hyderabad, Telangana • 29°C Clear</span></div><button class="relative w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block"><div class="text-body-sm font-body-sm text-on-surface font-medium leading-none">Ravi Kumar</div><div class="text-[11px] text-on-surface-variant leading-none mt-1">Green Valley Farm</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 overflow-y-auto shadow-[0_1px_8px_rgba(0,0,0,0.02)] flex flex-col py-space-md"><nav class="flex-1 px-3 space-y-1" data-active-classes="bg-secondary-container text-on-secondary-container font-medium"><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-farm" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span>My Farm</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span>Crops</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="soil" href="#"><span class="material-symbols-outlined text-[20px]">layers</span><span>Soil</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="weather" href="#"><span class="material-symbols-outlined text-[20px]">air</span><span>Weather</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="irrigation" href="#"><span class="material-symbols-outlined text-[20px]">water_drop</span><span>Irrigation</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pest-and-disease" href="#"><span class="material-symbols-outlined text-[20px]">pest_control</span><span>Pest &amp; Disease</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agripulse-ai" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AgriPulse AI</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span>Analytics</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">crisis_alert</span><span>Alerts</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="sensors" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span>Sensors</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recommendations-and-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Recommendations &amp; Settings</span></a></nav></aside><div class="pl-64"><main class="min-h-screen pt-16 bg-surface px-space-lg lg:px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Spatial Header Hub -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Operational Engine Live
+        </span>
+<span class="text-on-surface-variant font-label-caps text-label-caps tracking-widest uppercase">ID: AP-8841-HYD</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Farm Recommendations &amp; Workspace Settings
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 max-w-2xl">
+        Operational prescriptions and localized telemetry configurations for Green Valley Farm (12.5 Acres).
+      </p>
+</div>
+<!-- Segmented Master Switch (iOS Segmented Style) -->
+<div class="bg-surface-container-high p-1 rounded-full flex items-center shadow-inner self-start lg:self-auto">
+<button class="px-5 py-2 rounded-full font-body-sm text-body-sm font-medium transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm flex items-center gap-2" id="tab-recs-btn" onclick="switchTab('recommendations')">
+<span class="material-symbols-outlined text-[18px] text-primary">auto_fix_high</span>
+<span>Active Prescriptions</span>
+<span class="px-2 py-0.5 text-[11px] rounded-full bg-secondary-container text-on-secondary-container font-semibold">5</span>
+</button>
+<button class="px-5 py-2 rounded-full font-body-sm text-body-sm font-medium transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center gap-2" id="tab-settings-btn" onclick="switchTab('settings')">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Settings &amp; Preferences</span>
+</button>
+</div>
+</div>
+<!-- TAB VIEW 1: ACTIVE RECOMMENDATIONS -->
+<div class="flex flex-col gap-space-xl" id="view-recommendations">
+<!-- Telemetry & Predictive Context Banner -->
+<div class="relative overflow-hidden rounded-[24px] bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)]">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/60 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase font-semibold">Agronomic Intelligence Loop</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Synched 4 mins ago via Sentinel-2 &amp; Soil Bus #4</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+              High Precipitation Anomaly (22mm) incoming within 18 hours
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Automated hydrologic dampening and top-dressing nitrogen balancing are prioritized to prevent leaching and root saturation.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-5 h-10 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium hover:bg-primary-container transition-colors shadow-sm flex items-center gap-2" onclick="executeAllOptimal()">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Batch Optimize All (2 Critical)</span>
+</button>
+<button class="px-4 h-10 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-body-sm text-body-sm font-medium transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Refine Model</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recommendations Stream (Editorial Asymmetric Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Critical / Urgent Actions (Col 7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Immediate Actions</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">· 2 items require field signoff</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Priority Sorted</span>
+</div>
+<!-- Card 1: Panicle Initiation Nitrogen Top-Dressing (Crop / Agronomy) -->
+<div class="group rounded-[24px] bg-surface-container-lowest p-space-lg shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-md transition-all duration-300">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychiatry</span>
+</span>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Crop · Agronomy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Panicle Initiation Nitrogen Top-Dressing
+                </h3>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase tracking-wider font-semibold">
+              High Priority
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+            Target Parcel <strong>Rice BPT 5204 (Block A, 5.2 Acres)</strong> has transitioned into early panicle primordium differentiation. Immediate calibrated urea split (28 kg N/ha) required before soil water saturation increases.
+          </p>
+<!-- Telemetry Micro Strip -->
+<div class="grid grid-cols-3 gap-space-sm mt-space-md py-space-sm px-space-md rounded-2xl bg-surface-container-low">
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant uppercase">SPAD Chlorophyll</span>
+<span class="font-metric-num text-body-md text-on-surface font-semibold tabular-nums">34.2 <span class="text-xs text-error font-normal">(-12% opt)</span></span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant uppercase">Soil Temp</span>
+<span class="font-metric-num text-body-md text-on-surface font-semibold tabular-nums">26.4°C</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps text-on-surface-variant uppercase">Window Closes</span>
+<span class="font-metric-num text-body-md text-primary font-semibold tabular-nums">In 2 Days</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Agronomist model verified (ICAR-IIRR)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-colors">
+                Dismiss
+              </button>
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium hover:bg-primary-container transition-colors shadow-sm flex items-center gap-1.5" onclick="triggerToast('Nitrogen Top-Dressing Scheduled for Tomorrow morning.')">
+<span class="material-symbols-outlined text-[16px]">calendar_add_on</span>
+<span>Schedule Application</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Hedge Drip Inflow by 35% (Irrigation) -->
+<div class="group rounded-[24px] bg-surface-container-lowest p-space-lg shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-md transition-all duration-300">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">valve</span>
+</span>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Hydrologic Defense · Field B</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Hedge Drip Inflow by 35% across Cotton Blocks
+                </h3>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase tracking-wider font-semibold">
+              High Priority
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+            Forecast models indicate heavy precipitation (&gt;22mm) starting tomorrow morning. Dampen hydraulic line pressure and solenoid valve group B1-B4 to avert root-zone anoxia and fertilizer runoff.
+          </p>
+<!-- SVG Visual Hydrologic Gauge -->
+<div class="flex items-center gap-space-md p-space-sm rounded-2xl bg-surface-container-low mt-space-md">
+<div class="w-24 shrink-0 flex flex-col items-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="65, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="text-[11px] font-label-caps text-on-surface-variant -mt-10 font-bold">65% Target</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface mb-1">
+<span>Current Inflow: <strong>4.8 L/hr/dripper</strong></span>
+<span class="text-secondary font-medium">Hedging to 3.1 L/hr</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 65%;"></div>
+</div>
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant mt-1.5">
+<span>Sector Pressure: 2.1 bar</span>
+<span>Target Execution: Today 18:00</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">av_timer</span>
+<span>Must apply before 18:00 cutoff</span>
+</span>
+<button class="px-5 py-2 rounded-full bg-secondary text-on-secondary font-body-sm text-body-sm font-medium hover:bg-secondary/90 transition-colors shadow-sm flex items-center gap-1.5" onclick="triggerToast('Hydraulic solenoids dialed to 65% capacity.')">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Apply Flow Override</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Proactive & Maintenance Prescriptions (Col 5) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Preventive Queue</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">· 3 scheduled</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Medium / Low</span>
+</div>
+<!-- Card 3: Soil Biology (Soluble Silica) -->
+<div class="group rounded-[24px] bg-surface-container-lowest p-space-lg shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-md transition-all duration-300">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">science</span>
+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Soil Chemistry</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider font-semibold">
+              Medium
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm group-hover:text-primary transition-colors">
+            Secondary micro-nutrient replenishment: Soluble Silica spray
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+            Strengthen culm epidermis in paddy plots against blast fungus susceptibility post-rain. Foliar application at 2.5 ml/L.
+          </p>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Window: Next 4 Days</span>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium transition-colors" onclick="triggerToast('Foliar Soluble Silica logged to farm activity ledger.')">
+              Log Task
+            </button>
+</div>
+</div>
+<!-- Card 4: Weather Defense (Drainage Furrows) -->
+<div class="group rounded-[24px] bg-surface-container-lowest p-space-lg shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-md transition-all duration-300">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">flood</span>
+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Drainage &amp; Hydrology</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider font-semibold">
+              Medium
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm group-hover:text-primary transition-colors">
+            Inspect secondary drainage furrows in low-lying quadrants
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+            Ensure gravity runoff outlets in Quadrant Q3 &amp; Q4 are unblocked from accumulated silt before dawn storm arrival.
+          </p>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Target: Tomorrow 08:00</span>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium transition-colors" onclick="triggerToast('Quadrant furrows marked as fully cleared and inspected.')">
+              Mark Inspected
+            </button>
+</div>
+</div>
+<!-- Card 5: Pest Prophylaxis (Copper oxychloride) -->
+<div class="group rounded-[24px] bg-surface-container-lowest p-space-lg shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] hover:shadow-md transition-all duration-300">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">pest_control</span>
+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Phytosanitary</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+              Low
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-sm group-hover:text-primary transition-colors">
+            Copper oxychloride preventive spray for Field Block B1
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+            Early detection of angular leaf spot fungal spores within 300m perimeter. Recommend prophylaxis application after rain clears.
+          </p>
+<div class="flex items-center justify-between mt-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Target: Saturday</span>
+<button class="px-4 py-1.5 rounded-full text-primary hover:bg-secondary-container/40 font-body-sm text-body-sm font-medium transition-colors" onclick="openDiagnosticModal()">
+              View Diagnostic
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB VIEW 2: SETTINGS & PREFERENCES (Hidden by default or toggled) -->
+<div class="hidden flex-col gap-space-xl" id="view-settings">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Settings Left Column (Profile & Notifications) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Farm Profile Card -->
+<div class="rounded-[24px] bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)]">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-2xl bg-primary-fixed/40 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">agriculture</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Farm Profile &amp; Estate Boundary</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Core cadastral identifiers and managerial permissions</span>
+</div>
+</div>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium transition-colors flex items-center gap-1.5" onclick="triggerToast('Farm profile editor opened.')">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Profile</span>
+</button>
+</div>
+<!-- Farm Visual Map Preview Inset -->
+<div class="w-full h-44 rounded-2xl bg-cover bg-center relative overflow-hidden mb-space-lg" data-location="Hyderabad, Telangana" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRlpkU0Nh4KoP2Nf5_N03TvQLjEvzDSvBM6UeYUoY9AgjQVHc7lwZ4fsyK2eukTxBEI0I2jaG7TdgLMhJlLf9TjQt87owt_pxzzQDNm02-QJ2IAoDl-dbwWddD1yD-5scQ3JiOfX4pbMbMvo17W9kPSN8yCi4-XUFkrh8rQVobfFTEmYJMj7B6_nEhz0Wc9dcAkv_Vin7EiN4fvzc3KFEna6gmBSwQDotC4T2pi1G25LvUpbkbke0mkQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="font-body-sm text-body-sm font-medium">17.3850° N, 78.4867° E · Shamshabad Rural</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-caps text-label-caps uppercase font-semibold">
+                Survey No. 402/A
+              </span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between py-2 border-b border-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Farm Legal Name</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Green Valley Farm</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary Operator / Agronomist</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Ravi Kumar (Lead Agronomist)</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Planted Acreage</span>
+<span class="font-body-md text-body-md text-on-surface font-medium tabular-nums">12.50 Acres (4 Cadastral Parcels)</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Soil Series Archetype</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Deep Red Sandy Loam (Alfisols)</span>
+</div>
+</div>
+</div>
+<!-- Notification Channels & Automation Alerts -->
+<div class="rounded-[24px] bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-3 mb-space-md">
+<span class="w-10 h-10 rounded-2xl bg-secondary-container/50 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Notification Channels</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated dispatches across hardware and mobile clients</span>
+</div>
+</div>
+<div class="space-y-space-md">
+<!-- Toggle 1 -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="max-w-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">Critical Pest &amp; Pathogen Spore Incursions</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High-urgency SMS alerts and push banners for early fungal spore detections.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 ml-4">
+<input checked="" class="sr-only peer" onchange="triggerToast('Pest alert preferences updated.')" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="max-w-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">Rain &amp; Hydraulic Shifts (Irrigation Overrides)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Immediate push notification when automated rain triggers shut down mainline pumps.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 ml-4">
+<input checked="" class="sr-only peer" onchange="triggerToast('Hydraulic push alert preferences updated.')" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle 3 -->
+<div class="flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="max-w-md">
+<div class="font-body-md text-body-md text-on-surface font-medium">Daily Morning Agronomy Brief (06:30 IST)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Summary digest delivered via WhatsApp Business API and registered agronomist email.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 ml-4">
+<input checked="" class="sr-only peer" onchange="triggerToast('Daily Morning Brief toggled.')" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Settings Right Column (Display, Localization & Data Sovereignty) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Display & Localization -->
+<div class="rounded-[24px] bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-3 mb-space-md">
+<span class="w-10 h-10 rounded-2xl bg-tertiary-fixed/60 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Language &amp; Region</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Multilingual translation &amp; metric formats</span>
+</div>
+</div>
+<!-- Language Selector Pills -->
+<div class="mb-space-md">
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2">Agronomic Interface Language</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="lang-pill py-2.5 px-3 rounded-xl bg-primary text-on-primary font-body-sm text-body-sm font-medium text-center shadow-sm transition-all" onclick="setLanguage(this, 'English')">
+                English
+              </button>
+<button class="lang-pill py-2.5 px-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium text-center transition-all" onclick="setLanguage(this, 'Telugu')">
+                తెలుగు (Telugu)
+              </button>
+<button class="lang-pill py-2.5 px-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium text-center transition-all" onclick="setLanguage(this, 'Hindi')">
+                हिन्दी (Hindi)
+              </button>
+</div>
+</div>
+<!-- Unit Toggles -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Temperature</span>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="flex-1 py-1 rounded-md bg-secondary-container text-on-secondary-container font-body-sm text-body-sm font-semibold">°C (Celsius)</button>
+<button class="flex-1 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm">°F</button>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Soil &amp; Hydrology</span>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="flex-1 py-1 rounded-md bg-secondary-container text-on-secondary-container font-body-sm text-body-sm font-semibold">Metric</button>
+<button class="flex-1 py-1 rounded-md text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm">Imperial</button>
+</div>
+</div>
+</div>
+<!-- Appearance Selector -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mb-2">Visual Theme</label>
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2 rounded-2xl bg-surface-container border-2 border-primary cursor-pointer flex flex-col items-center text-center">
+<div class="w-full h-10 rounded-lg bg-surface-container-lowest shadow-sm mb-1.5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-primary">light_mode</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium">Light</span>
+</div>
+<div class="p-2 rounded-2xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex flex-col items-center text-center transition-colors" onclick="triggerToast('Dark appearance synchronized to OS schedule.')">
+<div class="w-full h-10 rounded-lg bg-inverse-surface text-inverse-on-surface shadow-sm mb-1.5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">dark_mode</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Dark</span>
+</div>
+<div class="p-2 rounded-2xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex flex-col items-center text-center transition-colors" onclick="triggerToast('System dynamic appearance set.')">
+<div class="w-full h-10 rounded-lg bg-gradient-to-r from-surface-container-lowest to-inverse-surface shadow-sm mb-1.5 flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">hdr_auto</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">System</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Sovereignty & Export -->
+<div class="rounded-[24px] bg-surface-container-lowest p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-3 mb-space-sm">
+<span class="w-10 h-10 rounded-2xl bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">database</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Data Sovereignty</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Portability, compliance &amp; raw exports</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Green Valley Farm maintains 100% proprietary telemetry ownership. Export encrypted multi-band spectral files and sensor logs.
+          </p>
+<div class="space-y-2">
+<button class="w-full h-11 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium flex items-center justify-between transition-colors" onclick="triggerToast('Exporting 12.5 Acre Cadastral GeoJSON + CSV Telemetry archive...')">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Download Agronomic Telemetry (GeoJSON &amp; CSV)</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">24.2 MB</span>
+</button>
+<button class="w-full h-11 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-medium flex items-center justify-between transition-colors" onclick="triggerToast('Audit log generated. 48 sensor calibration nodes intact.')">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span>Audit Sensor Calibration Records</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Verified</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Overlay -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="px-5 py-3 rounded-2xl bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-text">Notification triggered</span>
+</div>
+</div>
+<!-- Diagnostic Modal Inset (Hidden) -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4" id="diagnostic-modal">
+<div class="bg-surface-container-lowest rounded-[28px] max-w-lg w-full p-space-lg shadow-2xl relative">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Microscopic Pest Diagnostic</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closeDiagnosticModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<img class="w-full h-48 rounded-xl object-cover mb-space-md" data-alt="High-resolution microscopic agronomic leaf scan exhibiting initial symptoms of angular leaf spot fungal spores with analytical green reticle overlays and diagnostic confidence metrics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFxZ5hzNeNWwZ1DIFVC3xoEpAn09VMpTfO77Cu4Os9ZsEOHkjC1vchZbaf2dYX6TigPKrUHxsKmHgRK1Xi1ia40RLpQJ_3ve9m39obxV5f6QwzwyJOkh6WMk-TkgUr0ROXGixzT-gVyW-zKR29gpkEdlFptuMMhAmL-HJOtpVPchXf5YWIDvrITD7QsXJLXzFg6uvGb31ZqJdTVi0VPrcG8zJZS_dJUfmnfzr2UIv_EORJDeltdP9cAw"/>
+<div class="space-y-2 mb-space-md">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Identified Pathogen:</span>
+<span class="font-medium text-on-surface">Xanthomonas campestris pv. malvacearum</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Infection Severity:</span>
+<span class="font-medium text-secondary">Early Prophylactic (Stage 1)</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Recommended Dosage:</span>
+<span class="font-medium text-on-surface">3.0 g / Litre (Copper Oxychloride 50 WP)</span>
+</div>
+</div>
+<div class="flex justify-end gap-2">
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface font-body-sm text-body-sm" onclick="closeDiagnosticModal()">
+          Dismiss
+        </button>
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-medium" onclick="closeDiagnosticModal(); triggerToast('Diagnostic report queued for field chemical applicator.')">
+          Dispatch Spray Crew
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(tab) {
+    const recsView = document.getElementById('view-recommendations');
+    const settingsView = document.getElementById('view-settings');
+    const recsBtn = document.getElementById('tab-recs-btn');
+    const settingsBtn = document.getElementById('tab-settings-btn');
+
+    if (tab === 'recommendations') {
+      recsView.classList.remove('hidden');
+      recsView.classList.add('flex');
+      settingsView.classList.add('hidden');
+      settingsView.classList.remove('flex');
+
+      recsBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      recsBtn.classList.remove('text-on-surface-variant');
+
+      settingsBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      settingsBtn.classList.add('text-on-surface-variant');
+    } else {
+      settingsView.classList.remove('hidden');
+      settingsView.classList.add('flex');
+      recsView.classList.add('hidden');
+      recsView.classList.remove('flex');
+
+      settingsBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      settingsBtn.classList.remove('text-on-surface-variant');
+
+      recsBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      recsBtn.classList.add('text-on-surface-variant');
+    }
+  }
+
+  function triggerToast(message) {
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    toastText.textContent = message;
+
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 3200);
+  }
+
+  function executeAllOptimal() {
+    triggerToast('Batch applied: Nitrogen Top-Dressing scheduled & Flow hedged to 65%.');
+  }
+
+  function setLanguage(el, langName) {
+    document.querySelectorAll('.lang-pill').forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    el.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    el.classList.remove('bg-surface-container-low', 'text-on-surface');
+    triggerToast('Interface language updated to ' + langName);
+  }
+
+  function openDiagnosticModal() {
+    const modal = document.getElementById('diagnostic-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeDiagnosticModal() {
+    const modal = document.getElementById('diagnostic-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script></main></div></body></html>

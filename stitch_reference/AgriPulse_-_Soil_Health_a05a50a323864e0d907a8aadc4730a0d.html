@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-low":"#f6f3f5","outline":"#707972","primary-fixed-dim":"#96d4b2","secondary-fixed":"#bceed1","surface-container-highest":"#e4e2e4","on-primary":"#ffffff","inverse-on-surface":"#f3f0f2","on-secondary-fixed":"#002113","on-tertiary-fixed":"#141e1a","surface-bright":"#fcf8fb","secondary-fixed-dim":"#a1d1b6","surface-container-high":"#eae7ea","on-secondary-fixed-variant":"#214f3a","tertiary-fixed-dim":"#bec9c3","surface-tint":"#2d694d","primary-fixed":"#b1f0cd","tertiary-container":"#58625d","on-primary-fixed-variant":"#105137","on-background":"#1b1b1d","error-container":"#ffdad6","on-surface":"#1b1b1d","secondary":"#3a6751","surface-dim":"#dcd9dc","background":"#fcf8fb","primary-container":"#2f6b4f","on-surface-variant":"#404943","inverse-primary":"#96d4b2","tertiary-fixed":"#dae5de","surface-container":"#f0edef","on-primary-container":"#aae9c6","surface":"#fcf8fb","inverse-surface":"#303032","on-tertiary-container":"#d2ddd7","outline-variant":"#c0c9c1","on-secondary":"#ffffff","on-tertiary":"#ffffff","surface-variant":"#e4e2e4","on-primary-fixed":"#002113","on-tertiary-fixed-variant":"#3f4944","surface-container-lowest":"#ffffff","primary":"#125238","on-error":"#ffffff","error":"#ba1a1a","secondary-container":"#bceed1","on-error-container":"#93000a","on-secondary-container":"#406d56","tertiary":"#404a45"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.75rem","gutter-lg":"2rem","space-lg":"1.5rem","space-md":"1rem","gutter":"1.5rem","margin-desktop":"3rem","space-xs":"0.5rem","gutter-sm":"1rem","space-xl":"2.5rem","margin-mobile":"1rem","margin":"2rem"},"fontFamily":{"display-mobile":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"headline-sm":["Inter"],"metric-num":["Inter"],"headline-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"label-caps":["Inter"]},"fontSize":{"display-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.025em","fontWeight":"500"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"500"}],"body-lg":["17px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"500"}],"display":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"500"}],"headline-sm":["19px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"500"}],"metric-num":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[260px]"><img alt="AgriPulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WfaiLvvgf9a5-NGlhXD5D4pLSjmFUp5bMPqWgtuCkzX2jcR7FJictSy86AWciGYECsN-nXBpRdwCAkFoWXpLV9R5ZsWh1yqPf-iTsp4BpIfOxHbxSiVozBjztB_EOT0UgMMKSTrZhiW3cx1WOhcH16-vz8CTLwCv7Zg-j6BBL9_C8WHg-iL49-FFqIt1LOWDg1DrEjbnANaOem-06kLxiZrfevUeCyOr5XaxfIAiulUlALJ_NoZI79mUGc"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">AgriPulse</span></div><div class="flex-1 max-w-md hidden md:flex items-center"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-9 pl-9 pr-12 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search fields, crops, alerts, diagnostics..." type="text"/><kbd class="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-label-caps text-label-caps text-on-surface-variant bg-surface-container-highest rounded">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">wb_sunny</span><span>Hyderabad, Telangana • 29°C Clear</span></div><button class="relative w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block"><div class="text-body-sm font-body-sm text-on-surface font-medium leading-none">Ravi Kumar</div><div class="text-[11px] text-on-surface-variant leading-none mt-1">Green Valley Farm</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 overflow-y-auto shadow-[0_1px_8px_rgba(0,0,0,0.02)] flex flex-col py-space-md"><nav class="flex-1 px-3 space-y-1" data-active-classes="bg-secondary-container text-on-secondary-container font-medium"><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-farm" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span>My Farm</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="crops" href="#"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span>Crops</span></a><a aria-current="page" class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full transition-colors bg-secondary-container text-on-secondary-container font-medium" data-path="soil" href="#"><span class="material-symbols-outlined text-[20px]">layers</span><span>Soil</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="weather" href="#"><span class="material-symbols-outlined text-[20px]">air</span><span>Weather</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="irrigation" href="#"><span class="material-symbols-outlined text-[20px]">water_drop</span><span>Irrigation</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pest-and-disease" href="#"><span class="material-symbols-outlined text-[20px]">pest_control</span><span>Pest & Disease</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agripulse-ai" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AgriPulse AI</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span>Analytics</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">crisis_alert</span><span>Alerts</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="sensors" href="#"><span class="material-symbols-outlined text-[20px]">sensors</span><span>Sensors</span></a><a class="flex items-center gap-space-sm px-3.5 py-2.5 rounded-full text-body-sm font-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recommendations-and-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Recommendations & Settings</span></a></nav></aside><div class="pl-64"><main class="min-h-screen pt-16 bg-surface px-space-lg lg:px-space-xl py-space-xl"><div class="max-w-[1400px] mx-auto"><div class="flex flex-col w-full">
+<!-- Header & Field Selection Zone -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider mb-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Green Valley Farm • 12.5 Acres Active Stratum</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Soil Health & Vitality</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+        Real-time telemetry from 16 IoT multi-depth soil probes across 12.5 acres • Hyderabad Sector 4
+      </p>
+</div>
+<!-- Segmented Field Switcher -->
+<div class="bg-surface-container-low p-1 rounded-full flex items-center gap-1 overflow-x-auto max-w-full shadow-inner shadow-black/5" id="field-segmented-control">
+<button class="px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 bg-surface-container-lowest text-primary font-medium shadow-sm hover:text-primary" onclick="selectField(this, 'all')">
+        All Fields (Avg)
+      </button>
+<button class="px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" onclick="selectField(this, 'rice')">
+        Field A • Rice
+      </button>
+<button class="px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" onclick="selectField(this, 'cotton')">
+        Field B • Cotton
+      </button>
+<button class="px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" onclick="selectField(this, 'tomato')">
+        Field C • Tomato
+      </button>
+<button class="px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" onclick="selectField(this, 'maize')">
+        Field D • Maize
+      </button>
+</div>
+</div>
+<!-- Primary Intelligence Hero Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Circular Score Hero Card (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-[24px] p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Diagnostic Index</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+          Optimal Biomass
+        </span>
+</div>
+<!-- Ring Presentation Area -->
+<div class="relative my-8 flex flex-col items-center justify-center">
+<div class="relative w-56 h-56 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 160 160">
+<!-- Background Arc -->
+<circle class="text-surface-container-high" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-width="9"></circle>
+<!-- Value Arc (84% of 427.26 circumference = 358.9 offset) -->
+<circle class="text-primary-container transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" id="score-ring" r="68" stroke="currentColor" stroke-dasharray="427.26" stroke-dashoffset="68.36" stroke-linecap="round" stroke-width="9"></circle>
+</svg>
+<!-- Score Inner Content -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-display text-display text-on-surface tracking-tight font-medium" id="primary-score-display">84</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium -mt-1">of 100 Index</span>
+</div>
+</div>
+<div class="text-center mt-4">
+<div class="font-headline-sm text-headline-sm text-on-surface font-medium">Class 1 Highly Fertile</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">update</span>
+<span>Tested 18 minutes ago • Calibrated yesterday</span>
+</div>
+</div>
+</div>
+<!-- Probe Status Summary Strip -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sensors</span>
+</div>
+<div>
+<div class="font-body-sm text-body-sm text-on-surface font-medium">16 / 16 Sensors Active</div>
+<div class="text-[11px] text-on-surface-variant">Low-frequency sub-soil mesh</div>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-medium tracking-wide">SYNCED</span>
+</div>
+</div>
+<!-- 4 Key Nutrient Gauges (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-[24px] p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Macronutrient & pH Balance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Primary Chemical Stratum</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span> 3 Optimal, 1 Moderate
+        </span>
+</div>
+<div class="space-y-6 my-auto pt-2">
+<!-- pH Gauge -->
+<div class="p-4 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-xl bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">pH</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Soil Acidity (pH)</span>
+<span class="text-[12px] text-on-surface-variant ml-2 font-normal">Optimal range: 6.0 - 7.5</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-metric-num text-headline-sm text-on-surface font-medium">6.7</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">Optimal</span>
+</div>
+</div>
+<!-- Visual Range Bar for pH (scale 4 to 10) -->
+<div class="relative w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<!-- Optimal Zone Marker -->
+<div class="absolute left-[33%] right-[42%] h-full bg-primary-fixed-dim/40 rounded-full"></div>
+<!-- Current Pin (6.7 maps to ~45%) -->
+<div class="absolute top-0 bottom-0 left-0 bg-primary-container rounded-full" style="width: 45%;"></div>
+</div>
+<div class="flex justify-between text-[10px] text-on-surface-variant mt-1.5 px-0.5">
+<span>4.0 Acidic</span>
+<span class="text-primary font-medium">Target Sweet Spot</span>
+<span>9.0 Alkaline</span>
+</div>
+</div>
+<!-- Nitrogen (N) -->
+<div class="p-4 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-xl bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">N</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Nitrogen Availability</span>
+<span class="text-[12px] text-on-surface-variant ml-2 font-normal">Target: 75% - 85%</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-metric-num text-headline-sm text-on-surface font-medium">72%</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps">Moderate</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary transition-all duration-700 rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<!-- Phosphorus (P) -->
+<div class="p-4 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-xl bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">P</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Phosphorus Index</span>
+<span class="text-[12px] text-on-surface-variant ml-2 font-normal">Target: 60% - 75%</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-metric-num text-headline-sm text-on-surface font-medium">64%</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">Sufficient</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container transition-all duration-700 rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<!-- Potassium (K) -->
+<div class="p-4 rounded-2xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-xl bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">K</span>
+<div>
+<span class="font-body-md text-body-md text-on-surface font-medium">Potassium Reserve</span>
+<span class="text-[12px] text-on-surface-variant ml-2 font-normal">Target: 70% - 85%</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-metric-num text-headline-sm text-on-surface font-medium">81%</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">Optimal</span>
+</div>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container transition-all duration-700 rounded-full" style="width: 81%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-center justify-between text-on-surface-variant text-[12px]">
+<span>Spectrometric N-P-K measurement at 15cm & 30cm root depths</span>
+<button class="text-primary hover:text-primary-container font-medium inline-flex items-center gap-0.5">
+          View Raw Ion Counts <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Physical Stratification & Advisory Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Physical Properties & Stratification (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-[24px] p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Stratum Mechanics</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Soil Physical Properties</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">science</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+          Multi-layer moisture infiltration and thermal equilibrium across Root Horizon A (0-30cm).
+        </p>
+<!-- 4 Metric Horizontal Cells -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Soil Moisture -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Soil Moisture</span>
+<span class="material-symbols-outlined text-[16px] text-primary">water_drop</span>
+</div>
+<div class="font-metric-num text-headline-md text-on-surface font-medium">68%</div>
+<div class="text-[12px] text-on-surface-variant mt-0.5">Target: 60 - 75%</div>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest mt-3 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Soil Temperature -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Temperature</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">thermostat</span>
+</div>
+<div class="font-metric-num text-headline-md text-on-surface font-medium">24.2°C</div>
+<div class="text-[12px] text-on-surface-variant mt-0.5">Optimal root respiration</div>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest mt-3 overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 62%;"></div>
+</div>
+</div>
+<!-- Organic Matter -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Organic Matter</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">compost</span>
+</div>
+<div class="font-metric-num text-headline-md text-on-surface font-medium">3.4%</div>
+<div class="text-[12px] text-on-surface-variant mt-0.5">Rich loamy humus</div>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest mt-3 overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Electrical Conductivity -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Conductivity (EC)</span>
+<span class="material-symbols-outlined text-[16px] text-primary">electric_bolt</span>
+</div>
+<div class="font-metric-num text-headline-md text-on-surface font-medium">1.1 <span class="text-sm font-normal text-on-surface-variant">dS/m</span></div>
+<div class="text-[12px] text-on-surface-variant mt-0.5">Safe non-saline range</div>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest mt-3 overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 32%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Depth Stratum Micro-indicator -->
+<div class="mt-6 pt-4 flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant bg-surface-container-low/50 px-4 py-2.5 rounded-xl">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">layers</span>
+<span>Probe Depth Probing: 0cm • 15cm • 30cm • 45cm</span>
+</span>
+<span class="font-medium text-primary">Active Run</span>
+</div>
+</div>
+<!-- Agronomist Intelligence & Recommendation (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-[24px] p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] flex flex-col justify-between relative overflow-hidden">
+<!-- Decorative ambient gradient backplate -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary text-on-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            Soil Action Advisory
+          </span>
+<span class="text-[12px] text-on-surface-variant font-mono">REC-2025-04A</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-medium leading-snug tracking-tight mb-4">
+          Potassium is healthy across all 4 sectors. Nitrogen can be gently improved in Field B.
+        </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+          Consider applying nitrogen-rich organic vermicompost prior to Friday’s scheduled drizzle. Rainfall will naturally transport organic nutrients to the root absorption zone without supplemental pressurized irrigation.
+        </p>
+</div>
+<div>
+<!-- Recommendation Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-4">
+<button class="h-10 px-5 rounded-full bg-primary-container text-on-primary font-body-sm text-body-sm font-medium hover:bg-primary transition-colors flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+<span>Calculate Compost Volume (120 kg)</span>
+</button>
+<button class="h-10 px-5 rounded-full bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export Soil Chemistry PDF</span>
+</button>
+</div>
+<!-- Field Worker Micro Note -->
+<div class="flex items-center gap-2 text-[12px] text-on-surface-variant mt-4 pl-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>Verified by Telangana State Agri-Science Knowledge Engine</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep Stratum Visual Preview Strip -->
+<div class="bg-surface-container-lowest rounded-[24px] p-space-lg lg:p-space-xl shadow-[0_1px_3px_rgba(0,0,0,0.02),0_20px_40px_-15px_rgba(0,0,0,0.03)] mb-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-6">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Field Profiles • Crop Mapping</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Crop Rhizosphere Breakdown</h3>
+</div>
+<div class="text-[12px] text-on-surface-variant">Last probe sensor sweep: 09:42 AM IST</div>
+</div>
+<!-- 4 Sub-Crop Quick Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Crop 1: Rice -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Field A • Rice</div>
+<div class="text-[12px] text-on-surface-variant">Paddy Horizon • 4.0 Acres</div>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">grain</span>
+</span>
+</div>
+<div class="space-y-1.5 text-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Moisture</span>
+<span class="font-medium text-on-surface">74%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Nitrogen</span>
+<span class="font-medium text-on-surface">78%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Health Score</span>
+<span class="font-medium text-primary">88 / 100</span>
+</div>
+</div>
+</div>
+<!-- Crop 2: Cotton -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Field B • Cotton</div>
+<div class="text-[12px] text-on-surface-variant">Black Loam • 3.5 Acres</div>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+</span>
+</div>
+<div class="space-y-1.5 text-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Moisture</span>
+<span class="font-medium text-on-surface">61%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Nitrogen</span>
+<span class="font-medium text-tertiary">66% (Low)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Health Score</span>
+<span class="font-medium text-secondary">79 / 100</span>
+</div>
+</div>
+</div>
+<!-- Crop 3: Tomato -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Field C • Tomato</div>
+<div class="text-[12px] text-on-surface-variant">Sandy Loam • 2.5 Acres</div>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">nutrition</span>
+</span>
+</div>
+<div class="space-y-1.5 text-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Moisture</span>
+<span class="font-medium text-on-surface">69%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Nitrogen</span>
+<span class="font-medium text-on-surface">74%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Health Score</span>
+<span class="font-medium text-primary">85 / 100</span>
+</div>
+</div>
+</div>
+<!-- Crop 4: Maize -->
+<div class="p-4 rounded-2xl bg-surface-container-low flex flex-col justify-between hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between mb-3">
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">Field D • Maize</div>
+<div class="text-[12px] text-on-surface-variant">Alluvial Silt • 2.5 Acres</div>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">agriculture</span>
+</span>
+</div>
+<div class="space-y-1.5 text-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Moisture</span>
+<span class="font-medium text-on-surface">66%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Nitrogen</span>
+<span class="font-medium text-on-surface">71%</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Health Score</span>
+<span class="font-medium text-primary">83 / 100</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectField(button, fieldKey) {
+    const parent = document.getElementById('field-segmented-control');
+    const buttons = parent.querySelectorAll('button');
+    
+    buttons.forEach(btn => {
+      btn.className = 'px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface';
+    });
+
+    button.className = 'px-4 py-2 rounded-full font-body-sm text-body-sm transition-all duration-200 bg-surface-container-lowest text-primary font-medium shadow-sm hover:text-primary';
+
+    const scoreDisplay = document.getElementById('primary-score-display');
+    const ring = document.getElementById('score-ring');
+    
+    // Smooth telemetry reaction on field switcher click
+    const fieldScores = {
+      'all': 84,
+      'rice': 88,
+      'cotton': 79,
+      'tomato': 85,
+      'maize': 83
+    };
+
+    const targetScore = fieldScores[fieldKey] || 84;
+    scoreDisplay.innerText = targetScore;
+
+    // Circumference = 2 * PI * 68 = ~427.26
+    const circumference = 427.26;
+    const offset = circumference - (circumference * targetScore / 100);
+    ring.style.strokeDashoffset = offset;
+  }
+</script></div></main></div></body></html>

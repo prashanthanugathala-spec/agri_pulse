@@ -1,0 +1,101 @@
+/* ==========================================================================
+   AgriPulse Design System Theme Tokens & CSS Variables
+   Source: Stitch Smart Agriculture Suite Design System
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Canvas Foundation */
+  --surface: #fcf8fb;
+  --surface-dim: #dcd9dc;
+  --surface-bright: #fcf8fb;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f6f3f5;
+  --surface-container: #f0edef;
+  --surface-container-high: #eae7ea;
+  --surface-container-highest: #e4e2e4;
+  --on-surface: #1b1b1d;
+  --on-surface-variant: #404943;
+  --inverse-surface: #303032;
+  --inverse-on-surface: #f3f0f2;
+  --surface-variant: #e4e2e4;
+  
+  /* Outline & Separators */
+  --outline: #707972;
+  --outline-variant: #c0c9c1;
+  --surface-tint: #2d694d;
+  
+  /* Brand Pigments & Fixed Colors */
+  --primary: #125238;
+  --primary-accent: #2f6b4f;
+  --primary-hover: #1f4d38;
+  --on-primary: #ffffff;
+  --primary-container: #2f6b4f;
+  --on-primary-container: #aae9c6;
+  --inverse-primary: #96d4b2;
+  --primary-fixed: #b1f0cd;
+  --primary-fixed-dim: #96d4b2;
+  --on-primary-fixed: #002113;
+  --on-primary-fixed-variant: #105137;
+  
+  --secondary: #3a6751;
+  --on-secondary: #ffffff;
+  --secondary-container: #bceed1;
+  --on-secondary-container: #406d56;
+  --secondary-fixed: #bceed1;
+  --secondary-fixed-dim: #a1d1b6;
+  --on-secondary-fixed: #002113;
+  --on-secondary-fixed-variant: #214f3a;
+  
+  --tertiary: #404a45;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #58625d;
+  --on-tertiary-container: #d2ddd7;
+  --tertiary-fixed: #dae5de;
+  --tertiary-fixed-dim: #bec9c3;
+  --on-tertiary-fixed: #141e1a;
+  --on-tertiary-fixed-variant: #3f4944;
+  
+  --background: #fcf8fb;
+  --on-background: #1b1b1d;
+
+  /* Telemetry Status Colors */
+  --status-optimal: #34c759;
+  --status-warning: #ff9f0a;
+  --status-critical: #ff453a;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --gutter-sm: 1rem;
+  --gutter: 1.5rem;
+  --gutter-lg: 2rem;
+  --margin-mobile: 1rem;
+  --margin: 2rem;
+  --margin-desktop: 3rem;
+
+  /* Typography Settings */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+  
+  /* Shadows & Elevation */
+  --shadow-ambient: 0 1px 3px rgba(0, 0, 0, 0.02), 0 20px 40px -15px rgba(0, 0, 0, 0.03);
+  --shadow-floating: 0 12px 32px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.02);
+  --shadow-card: 0 2px 20px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --card-border: 1px solid rgba(0, 0, 0, 0.04);
+}
